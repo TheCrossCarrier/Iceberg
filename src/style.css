@@ -1,0 +1,194 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&text=Создание%20сйт—уя«Глк»|family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,900&display=swap');
+
+/* Variables */
+
+:root {
+  --clr-primary: #0082C8;
+  --clr-primary-active: #005481;
+  --clr-secondary: #818181;
+}
+
+/* Overrides BS */
+
+.text-primary { color: var(--clr-primary) !important }
+
+.text-secondary { color: var(--clr-secondary) !important }
+
+.bg-primary { background-color: var(--clr-primary) !important }
+
+.border-primary { border-color: var(--clr-primary) !important }
+
+.btn {
+  padding: .375em .75em;
+}
+
+.btn-primary {
+  background-color: var(--clr-primary);
+  border-color: var(--clr-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--clr-primary-active);
+  border-color: var(--clr-primary-active);
+}
+
+/* .fs-1 { font-size: 3rem !important } 48px */
+/* .fs-2 { font-size: 1.5rem !important } 24px */
+/* .fs-3 { font-size: 1.125rem !important } 18px */
+/* .fs-4 { font-size: 1rem !important } 16px */
+.fs-5 { font-size: 1.125rem !important } /* 14px */
+.fs-6 { font-size: .875rem !important } /* 12px */
+
+.fs-7 {
+
+}
+
+.nav-item:hover {
+  background-color: var(--clr-primary-active);
+}
+
+@media (min-width: 1400px) {
+  .w-xxl-75 { width: 75% !important }
+  .position-xxl-static { position: static !important }
+}
+
+/*  */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+
+a,
+:visited,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  font: inherit;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+.icon {
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* HEADER */
+
+.header {
+  --navbar-height: 50px;
+}
+
+.top-bar {
+  height: 77px;
+}
+
+/* Search */
+
+.search input {
+  padding: .35em 1.142em .4em;
+  outline: none;
+  font-size: .875em;
+}
+
+.search input::placeholder {
+  color: var(--clr-primary);
+}
+
+.search button {
+  right: 11px;
+  width: 19px;
+  height: 19px;
+  background: url(img/search.svg) center/contain no-repeat;
+  border: none;
+}
+
+/* Phone */
+
+.phone .icon {
+  width: 27px;
+  height: 27px;
+  background-image: url(img/phone-primary.svg);
+}
+
+.address .icon {
+  width: 26px;
+  height: 27px;
+  background-image: url(img/geo.svg);
+}
+
+.right .icon_instagram,
+.right .icon_vk,
+.right .icon_accessibility {
+  color: var(--clr-primary);
+  transition: color .15s ease-in-out;
+}
+
+.right .icon_instagram:hover,
+.right .icon_vk:hover,
+.right .icon_accessibility:hover { color: var(--clr-primary-active) }
+
+/* Header::Naming */
+
+.header .naming {
+  height: 167px;
+  background:
+    url(img/header-particles.svg) right -477px top -575px no-repeat,
+    url(img/header-particles-2.svg) left -500px top -315px no-repeat,
+    url(img/header-bg.jpg) repeat;
+}
+
+/* Header::Nav */
+
+nav {
+  --nav-height: 50px;
+  height: var(--navbar-height);
+}
+
+/* Header::Search */
+
+.navbar-container .search {
+  position: absolute;
+  top: calc(var(--navbar-height) * .5);
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.navbar-container .search form {
+  width: 100% !important;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1399.98px) {
+  .header .naming {
+    height: 308px;
+  }
+  nav {
+    height: unset;
+    min-height: var(--navbar-height);
+  }
+}
+
+@media (max-width: 440px) {
+  .naming img:first-of-type {
+    transform: scale(.8) translateX(-25%);
+  }
+  .naming img:nth-of-type(2) {
+    transform: scale(.8);
+  }
+  .naming img:last-of-type {
+    transform: scale(.8) translateX(25%);
+  }
+}
