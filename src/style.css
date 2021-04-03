@@ -169,6 +169,37 @@ nav {
   width: 100% !important;
 }
 
+/* MAIN */
+
+/* Main::Carousel */
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 20%;
+  background-repeat: no-repeat;
+}
+
+.carousel-control-prev {
+  background-image: url(img/chevron-left.svg);
+  background-position: right;
+}
+
+.carousel-control-next {
+  background-image: url(img/chevron-right.svg);
+  background-position: left;
+}
+
+.carousel-indicators button {
+  width: 19px !important;
+  height: 19px !important;
+  background-color: white !important;
+  border-radius: 50%;
+}
+
+.carousel-indicators button.active {
+  background-color: var(--clr-primary) !important;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1399.98px) {
@@ -194,5 +225,13 @@ nav {
   }
   .naming img:last-of-type {
     transform: scale(.8) translateX(25%);
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-size: 20px;
+  }
+  .carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
   }
 }
