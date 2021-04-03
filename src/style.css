@@ -182,10 +182,14 @@ nav {
 }
 
 @media (max-width: 440px) {
+  .header .naming {
+    height: 258px;
+  }
   .naming img:first-of-type {
     transform: scale(.8) translateX(-25%);
   }
   .naming img:nth-of-type(2) {
+    padding: 0 !important;
     transform: scale(.8);
   }
   .naming img:last-of-type {
