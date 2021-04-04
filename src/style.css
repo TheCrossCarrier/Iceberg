@@ -276,11 +276,35 @@ nav {
   font-weight: 900;
 }
 
+.post .number {
+  transition: background-color .15s ease-in-out;
+}
+
+.post:hover .number {
+  background-color: var(--clr-primary-active) !important;
+}
+
+.post h3 {
+  transition: color .15s ease-in-out;
+}
+
+.post:hover h3 {
+  color: var(--clr-primary-active) !important;
+}
+
 /* Announces */
 
 .announce {
   box-shadow: 0px 2px 10px #E5E5E5;
   border-radius: 3px;
+}
+
+.announce h3 {
+  transition: color .15s ease-in-out;
+}
+
+.announce:hover h3 {
+  color: var(--clr-primary-active) !important;
 }
 
 /* MEDIA QUERIES */
