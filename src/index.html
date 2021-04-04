@@ -21,7 +21,7 @@
 
 </head>
 
-<body class="fs-5">
+<body class="fs-5 fw-semibold">
 
   <header class="header">
     
@@ -62,6 +62,7 @@
         <div class="w-100 d-flex justify-content-between flex-column flex-xxl-row">
           <img src="img/sport-school.svg" alt="Спортивная школа" class="align-self-start align-self-xxl-end" width="480" height="71">
           <img src="img/logo.svg" alt="Айсберг" class="p-3 p-xxl-0 align-self-center align-self-xxl-end" width="336" height="99">
+          <h1 class="visually-hidden">Айсберг</h1>
           <img src="img/ice-arena.svg" alt="Ледовая арена" class="align-self-end align-self-xxl-end" width="396" height="71">
         </div>
       </div>
@@ -95,7 +96,7 @@
 
   <main class="main">
 
-    <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+    <section class="carousel slide" id="carousel" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
         <button data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Слайд 2"></button>
@@ -114,7 +115,141 @@
       </div>
       <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev" aria-label="Предыдущий"></button>
       <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next" aria-label="Следующий"></button>
-    </div>
+    </section>
+
+    <section class="tiles">
+      <div class="container pt-5 d-flex flex-wrap justify-content-around justify-content-xl-between align-items-center">
+        <h2 class="visually-hidden">Информация</h2>
+
+        <a href="#" class="tile mb-5 d-flex flex-column justify-content-center align-items-center bg-white">
+          <i class="icon mb-2" style="background-image: url(img/family.svg)"></i>
+          <h3 class="d-flex justify-content-center align-items-center text-primary text-center fs-5 fw-bold">Информация для родителей</h3>
+          <span class="text-secondary fw-light">подробнее</span>
+        </a>
+
+        <a href="#" class="tile mb-5 d-flex flex-column justify-content-center align-items-center bg-white">
+          <i class="icon mb-2" style="background-image: url(img/calendar.svg)"></i>
+          <h3 class="d-flex justify-content-center align-items-center text-primary text-center fs-5 fw-bold">Календарь соревнований</h3>
+          <span class="text-secondary fw-light">подробнее</span>
+        </a>
+
+        <a href="#" class="tile mb-5 d-flex flex-column justify-content-center align-items-center bg-white">
+          <i class="icon mb-2" style="background-image: url(img/trophy.svg)"></i>
+          <h3 class="d-flex justify-content-center align-items-center text-primary text-center fs-5 fw-bold">Лучшие спортсмены</h3>
+          <span class="text-secondary fw-light">подробнее</span>
+        </a>
+
+        <a href="#" class="tile mb-5 d-flex flex-column justify-content-center align-items-center bg-white">
+          <i class="icon mb-2" style="background-image: url(img/trainer.svg)"></i>
+          <h3 class="d-flex justify-content-center align-items-center text-primary text-center fs-5 fw-bold">Тренерский состав</h3>
+          <span class="text-secondary fw-light">подробнее</span>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="container my-5 d-flex align-items-center news-announces">
+      <div class="row flex-column flex-xxl-row align-items-center align-items-xxl-start">
+
+        <section class="col news me-5">
+          <h2 class="fs-1 fw-semibold">Новости</h2>
+          <hr class="mb-5">
+          <div>
+
+            <article class="container mt-4 post">
+              <a href="#" class="row">
+
+                <time datetime="02-17" class="col-1 d-flex flex-column align-items-start fst-italic">
+                  <div class="py-1 ps-2 pe-3 bg-primary text-white fs-3 number">17</div>
+                  <span class="text-secondary fs-6 fw-light">февраля</span>
+                </time>
+
+                <div class="col container ps-4">
+                  <div class="row">
+                    <div class="col-2">
+                      <img src="img/post-1.jpg" alt="Хоккеисты">
+                    </div>
+                    <div class="col">
+                      <h3 class="fs-5 text-primary">Русский вратарь Сорокин наконец-то победил в НХЛ! И попал в трогательные объятия партнёров</h3>
+                      <p class="fs-6 fw-normal">Хоккеисты «Айлендерс» поздравляли Илью не только с долгожданным выигранным матчем, но и с заслуженным «сухарём».</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </a>
+            </article>
+
+            <article class="container mt-4 post">
+              <a href="#" class="row">
+
+                <time datetime="02-17" class="col-1 d-flex flex-column align-items-start fst-italic">
+                  <div class="py-1 ps-2 pe-3 bg-primary text-white fs-3 number">17</div>
+                  <span class="text-secondary fs-6 fw-light">февраля</span>
+                </time>
+
+                <div class="col container ps-4">
+                  <div class="row">
+                    <div class="col-2">
+                      <img src="img/post-1.jpg" alt="Хоккеисты">
+                    </div>
+                    <div class="col">
+                      <h3 class="fs-5 text-primary">Русский вратарь Сорокин наконец-то победил в НХЛ! И попал в трогательные объятия партнёров</h3>
+                      <p class="fs-6 fw-normal">Хоккеисты «Айлендерс» поздравляли Илью не только с долгожданным выигранным матчем, но и с заслуженным «сухарём».</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </a>
+            </article>
+
+            <article class="container mt-4 post">
+              <a href="#" class="row">
+
+                <time datetime="02-17" class="col-1 d-flex flex-column align-items-start fst-italic">
+                  <div class="py-1 ps-2 pe-3 bg-primary text-white fs-3 number">17</div>
+                  <span class="text-secondary fs-6 fw-light">февраля</span>
+                </time>
+
+                <div class="col container ps-4">
+                  <div class="row">
+                    <div class="col-2">
+                      <img src="img/post-1.jpg" alt="Хоккеисты">
+                    </div>
+                    <div class="col">
+                      <h3 class="fs-5 text-primary">Русский вратарь Сорокин наконец-то победил в НХЛ! И попал в трогательные объятия партнёров</h3>
+                      <p class="fs-6 fw-normal">Хоккеисты «Айлендерс» поздравляли Илью не только с долгожданным выигранным матчем, но и с заслуженным «сухарём».</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </a>
+            </article>
+
+          </div>
+
+          <a href="#" class="mt-2 px-4 btn btn-outline-primary rounded-pill">Все новости</a>
+
+        </section>
+
+        <aside class="col-3 mt-4 mt-xxl-0 announces">
+          <h2 class="fs-1 fw-semibold">Анонсы</h2>
+          <hr class="mb-5">
+          <a href="#" class="d-flex flex-column justify-content-center announce">
+            <img src="img/announce.jpg" alt="Первенство высшей хоккейной лиги">
+            <div class="p-3 mt-1">
+              <h3 class="fs-5 text-primary fw-semibold">ВСЕ НА ХОККЕЙ!!! Первенство высшей хоккейной лиги</h3>
+              <hr>
+              <time datetime="2021-02-08" class="fs-6 text-primary">8 февраля 2021</time>
+              <p class="fs-6 text-secondary fw-normal">Описание данного блока в одно-два предложения. </p>
+            </div>
+          </a>
+
+          <a href="#" class="mt-4 px-4 btn btn-outline-primary rounded-pill">Все анонсы</a>
+          
+        </aside>
+
+      </div>
+    </section>
 
   </main>
 
